@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pages {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.transparent {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.61);
+  display: none;
+}
+
+.page {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .text {
+  width: 60%;
+  text-align: justify;
+}
+
+.page .text .title {
+  margin-bottom: 15px;
+}
+
+.page .text p {
+  margin-bottom: 10px;
+}
+
+.page:nth-child(1) {
+  z-index: 1;
+  background: #9ADCFF;
+}
+
+.page:nth-child(2) {
+  z-index: 2;
+  background: #FFF89A;
+  right: 100vw;
+}
+
+.page:nth-child(3) {
+  z-index: 3;
+  background: #FFB2A6;
+  right: 100vw;
+}
+
+.page:nth-child(4) {
+  z-index: 4;
+  background: #FF8AAE;
+  right: 100vw;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  width: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.arrow.left {
+  display: none;
+  left: 4%;
+}
+
+.arrow.right {
+  right: 4%;
+}
+
+.info {
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  width: 50px;
+  top: 2%;
+  left: 2%;
+}
+
+.details {
+  max-width: 450px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.details div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details div img {
+  width: 50px;
+}
+
+.details span {
+  font-weight: 600;
+}
+
+.details p {
+  margin-bottom: 10px;
+  color: #464646;
+}
+/*# sourceMappingURL=style.css.map */
