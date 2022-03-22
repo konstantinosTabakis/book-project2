@@ -1,5 +1,5 @@
 let currentPage= 1
-const maxPages=4
+const maxPages=11
 const right= document.querySelector('.right')
 const left= document.querySelector('.left')
 

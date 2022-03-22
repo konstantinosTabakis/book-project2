@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
-$number-of-pages: 4;
+$number-of-pages: 11;
 
 $colors:(
     1:#9ADCFF,
     2:#FFF89A,
     3:#FFB2A6,
-    4:#FF8AAE
+    4:#FF8AAE,
+    5: #97DBAE,
+    6: #C3E5AE,
+    7: #F1E1A6,
+    8: #F4BBBB,
+    9: #24A19C,
+    10: #FAEEE7,
+    11: #D96098
 );
 
 
@@ -50,12 +57,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-size: 1.5rem;
+    padding: 20px 0;
     .text{
         width: 60%;
-        text-align: justify;
+        // text-align: justify;
         .title{
             margin-bottom: 15px;
+            
+        }
+        .title-cover{
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: calc(1em + 3vw);
+            font-weight: 500;
         }
         p{
             margin-bottom: 10px;
